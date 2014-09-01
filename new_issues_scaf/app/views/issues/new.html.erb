@@ -1,0 +1,21 @@
+<%- content_for :nav do %>
+   <p>text for hello </p>
+   <p>just saying some NEW ISSUE</p>
+<%- end%>
+
+<h1>New issue</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', issues_path %>
+
+</br>
+<p>This is a list of issue titles: </p>
+</br>
+<% @issues.each do |i|%>
+	<%= i.title %>
+</br>
+
+<% end %>
+  
+</table>

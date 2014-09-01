@@ -1,0 +1,28 @@
+<%- content_for :nav do %>
+   <p>text for hello </p>
+   <p>just saying some hi from show</p>
+<%- end%>
+
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @issue.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @issue.description %>
+</p>
+
+<p>
+  <strong>No follers:</strong>
+  <%= @issue.no_follers %>
+</p>
+
+
+
+
+<%= link_to 'Edit', edit_issue_path(@issue) %> |
+<%= link_to 'Back', issues_path %>
